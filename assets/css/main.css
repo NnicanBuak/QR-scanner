@@ -1,0 +1,10 @@
+body {
+  background-color: #212121;
+}
+
+#scanner-container>video,
+#scanner-container>canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

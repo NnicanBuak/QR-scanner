@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QR-сканнер</title>
+		<link rel="stylesheet" href="/assets/css/reset.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<div id="scanner-container"></div>
+		<a-scene embedded arjs="sourceType: webcam;">
+			<a-marker preset="hiro">
+				<a-entity gltf-model="url(3d-model.gltf)"></a-entity>
+			</a-marker>
+			<a-entity camera></a-entity>
+		</a-scene>
+		<script setup src="assets/js/scanner.js"></script>
+	</body>
+</html>
